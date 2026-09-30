@@ -1,0 +1,64 @@
+{
+  "request": {
+    "timestamp": "2026-09-30T17:32:13.376374+00:00",
+    "method": "POST",
+    "url": "https://sandbox.pay.yandex.ru/api/merchant/v1/orders",
+    "headers": {
+      "Authorization": "Api-Key <redacted>",
+      "Content-Type": "application/json",
+      "X-Request-Id": "a206ebb3-6713-499d-9de1-fc02290e7752",
+      "X-Request-Timeout": "10000",
+      "X-Request-Attempt": "0"
+    },
+    "body": {
+      "availablePaymentMethods": [
+        "SPLIT"
+      ],
+      "preferredPaymentMethod": "SPLIT",
+      "metadata": "Тестовое задание: оплата и полный возврат",
+      "purpose": "Тестовая оплата покупки",
+      "cart": {
+        "items": [
+          {
+            "discountedUnitPrice": "22990.54",
+            "productId": "126329",
+            "title": "Роттердам Velvet Pink",
+            "total": "22990.54",
+            "quantity": {
+              "count": "1"
+            }
+          },
+          {
+            "discountedUnitPrice": "5500.00",
+            "unitPrice": "24000.00",
+            "productId": "126330",
+            "title": "Роттердам Velvet Blue",
+            "total": "22000.00",
+            "quantity": {
+              "count": "4"
+            }
+          }
+        ],
+        "total": {
+          "amount": "44990.54"
+        }
+      },
+      "currencyCode": "RUB",
+      "orderId": "assignment-c8219b58-699b-4464-841c-fd28dc81ed42",
+      "redirectUrls": {
+        "onError": "https://example.com/payment/error",
+        "onSuccess": "https://example.com/payment/success",
+        "onAbort": "https://example.com/payment/abort"
+      },
+      "ttl": 1800
+    }
+  },
+  "httpStatus": 200,
+  "response": {
+    "code": 200,
+    "status": "success",
+    "data": {
+      "paymentUrl": "<redacted-payment-url>"
+    }
+  }
+}

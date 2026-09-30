@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Локальные переменные окружения и секреты
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Временные файлы и результаты промежуточного рендеринга
+tmp/
+*.tmp
+*.swp
+*~

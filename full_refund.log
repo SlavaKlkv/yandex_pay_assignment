@@ -1,0 +1,46 @@
+{
+  "request": {
+    "timestamp": "2026-09-30T17:41:27.135912+00:00",
+    "method": "POST",
+    "url": "https://sandbox.pay.yandex.ru/api/merchant/v2/orders/assignment-c8219b58-699b-4464-841c-fd28dc81ed42/refund",
+    "headers": {
+      "Authorization": "Api-Key <redacted>",
+      "Content-Type": "application/json",
+      "X-Request-Id": "b2c20826-e5c7-4d05-bc40-cae32f8c4f4f",
+      "X-Request-Timeout": "10000",
+      "X-Request-Attempt": "0"
+    },
+    "body": {
+      "externalOperationId": "0f15f844-4714-4073-85eb-13d78ff307cf",
+      "refundAmount": "44990.54",
+      "motive": "Полный возврат тестовой покупки"
+    }
+  },
+  "httpStatus": 200,
+  "response": {
+    "code": 200,
+    "status": "success",
+    "data": {
+      "operation": {
+        "operationId": "10f485c7-09de-4838-9e34-554c98ecee51",
+        "operationType": "REFUND",
+        "orderId": "assignment-c8219b58-699b-4464-841c-fd28dc81ed42",
+        "amount": "44990.54",
+        "pointsAmount": null,
+        "status": "PENDING",
+        "reason": null,
+        "params": {
+          "motive": "Полный возврат тестовой покупки",
+          "branch_id": null,
+          "manager_id": null
+        },
+        "externalOperationId": "0f15f844-4714-4073-85eb-13d78ff307cf",
+        "created": "2026-09-30T20:41:27.387857+03:00",
+        "updated": "2026-09-30T20:41:27.387857+03:00",
+        "paymentMethod": {
+          "methodType": "SPLIT"
+        }
+      }
+    }
+  }
+}
